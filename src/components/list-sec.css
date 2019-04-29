@@ -1,0 +1,139 @@
+/* List item for mobile */
+.li_title {
+  color: #0272b6;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+  line-height: 1rem;
+  padding-left: 1%;
+  vertical-align: bottom;
+}
+
+.li_main {
+  list-style: none; 
+  width: 100%;
+  position: relative;
+  padding-top: 0.5rem;    
+  padding-bottom: 0.7rem;
+  line-height: 2em;
+  text-align: left;
+}
+
+.bd_bot {
+  border-bottom: 1px solid #dde2e6;  
+}
+
+.mgt-n {
+  margin-top: -1.5rem;
+}
+.detail {
+  font-size: 0.9rem;
+  /* vertical-align: text-top; */
+}
+
+.detail-c {
+  color: #0272b6;
+}
+
+.r {
+  color: red;
+}
+
+.ind-l {
+  padding-left: 10%;
+}
+
+.detail:link,
+.detail:visited {
+  font-size: 0.9rem
+}
+
+.w1, .w2 {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.w1::before {
+  /* display: table; */
+  content: '. ';
+}
+
+.w1::after {
+  /* display: table; */
+  content: ' ';
+}
+
+.player {
+  height: 30px;
+}
+
+/* Non-mobile, grid Originally 640 */
+@media only screen and (min-width: 640px) {
+  .section-border {
+    width: 680px;
+  }
+  
+  /* List item */
+  .li_main {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    position: relative;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .w1 { /* sum should be 90% */
+    width: 40%;
+    display:flex;
+    flex-flow: wrap;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    vertical-align: middle;
+  }
+  .w2 { /* sum should be 90% */
+    display:flex;
+    flex-flow: wrap;
+    font-size: 1rem;
+    line-height: 1.3rem;
+    vertical-align: middle;
+  }
+  .al-c {
+    justify-content: center;
+  }
+
+  .w1::before {
+    /* display: table; */
+    content: '';
+  }
+
+  .w1::after {
+    /* display: table; */
+    content: '';
+  }
+
+  .li_main {
+    list-style: none; 
+    width: 100%;
+    position: relative;
+    padding-top: 1rem;    
+    padding-bottom: 1rem;
+    line-height: 2em;
+    text-align: left;
+  }
+
+  .li_title {
+    color: #0272b6;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    line-height: 1rem;
+    padding-left: 1%;
+    vertical-align: bottom;
+  }
+
+  .ind-l {
+    padding-left: 5%;
+  }
+  
+}

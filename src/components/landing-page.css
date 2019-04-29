@@ -1,0 +1,47 @@
+.main-bg {
+  background-color: white;
+  max-width: 900px;
+  padding: 3%;
+  margin: 3em auto;
+  border: 1px solid #DDDDDD;
+}
+
+.div {
+  max-width: 500px;
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flx {
+  display: flex;
+  max-width: 720px;
+  justify-content: space-between;
+}
+
+.s-div{
+  display: flex;
+  justify-content: right;
+  width: 900px;
+}
+
+/* Mobile, grid 640 */
+@media only screen and (max-width: 640px) {
+
+  .flx {
+    display: static;
+    max-width: 400px;
+    flex-wrap: wrap;
+  }
+  .main-bg {
+    padding: 2%;
+    margin: 0 auto;
+  }
+
+  .div {
+    max-width: 500px;
+    margin-top: 0;
+  }
+
+} 
+
