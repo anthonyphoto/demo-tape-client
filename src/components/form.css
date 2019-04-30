@@ -1,3 +1,10 @@
+.form-div {
+  max-width: 900px;
+  /* padding: 3%; */
+  margin: 3em auto;
+  color: #2a2c2d;
+
+}
 
 fieldset {
   border: none;
@@ -10,6 +17,7 @@ fieldset {
   /* width: 400px; */
   font-size: 1rem;
 }
+
 
 label {
   font-family: 'arial', sans-serif;
@@ -31,7 +39,7 @@ label {
 }
 
 .flt {
-  float: left;
+  /* float: left; */
 }
 
 .clr {
@@ -45,35 +53,40 @@ label {
   margin-top: 0.4rem;
 }
 
-input {
-  margin-top: 0.2rem;
-  margin-left: 1rem;
+.ip {
+  margin-top: 0.6rem;
+  margin-left: 0rem;
   margin-bottom: 0rem;
   font-family: 'Roboto', sans-serif;
-  font-size: 0.9rem;
+  font-size: 1.3rem;
   letter-spacing: 0.02rem;
-  width: 180px;
+  width: 250px;
   padding: 5px;
   border: none;
-  border-bottom: 2px solid #e0e0e0;
+  border-bottom: 1px solid #2a2c2d;
+  background-color: transparent;
   caret-color: red;
 }
 
-input:hover, 
-input:focus {
+.ip::placeholder {
+  color: #EEE;
+}
+
+.ip:hover, 
+.ip:focus {
   border-bottom: 2px solid #ec4e3e;
   outline: none;
   transition: border-color 0.5s ease 0s;
 }
 
-input.disabled {
+.ip.disabled {
   background-color: #EEE;
   padding: 10px;
   border: none;
 }
 
-input.disabled:hover,
-input.disabled:focus {
+.ip.disabled:hover,
+.ip.disabled:focus {
   border: none;
 }
 
@@ -82,13 +95,20 @@ input.disabled:focus {
 }
 
 .req {
-  margin-left: 15%;
+  margin-left: 2%;
   font-size:0.8rem;
-  color: red;
+  color: #2a2c2d;
+  /* color: red; */
+}
+.sms_note {
+  max-width: 400px;
+  margin-top: 3%;
+  font-size: 0.8rem;
+  letter-spacing: -0.01rem; 
 }
 
 
-button {
+/* button {
   height: 2rem;
   width: 80px;
   margin-top: 0rem;
@@ -122,8 +142,87 @@ button:hover:disabled,
 button:focus:disabled,
 button:active:disabled {
   background: #e5e5e5;
+} */
+
+.btn_black {
+  font-size: 1.3rem;
+  line-height: 1;
+  font-weight: 500;
+  letter-spacing: 0.06rem; 
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0.7rem 30px;
+  border-radius: 24px;
+  border: 2px solid #2a2c2d;;
+  color: #2a2c2d;
+  background-color: transparent;
+  margin-top: 1rem;
 }
 
+.btn_black:disabled {
+  cursor: not-allowed;
+  pointer-events: auto;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  color: #000;
+  border: 2px solid #FFF;;
+  background: #FFF;
+  opacity: 0.3;
+
+  /* background: transparent; */
+  /* background: #e5e5e5; */
+}
+
+.btn_black:hover,
+.btn_black:focus,
+.btn_black:active {
+  background-color: #2a2c2d;
+  color: #FFF;
+  transition: border-color 0.4s ease 0s, background-color 0.4s ease 0s;
+}
+
+.btn_black:hover:disabled,
+.btn_black:focus:disabled,
+.btn_black:active:disabled {
+  color: #000;
+  border: 2px solid #FFF;;
+  background: #FFF;
+  opacity: 0.3;
+
+}
+
+
+.font_l {
+  font-size: 3rem;
+  letter-spacing: -0.01rem; 
+  /* line-height: 1.23076923; */
+  line-height: 1.3;
+  font-weight: 300;
+  max-width: 700px;
+  margin-bottom: 1rem;
+}
+
+.font_m {
+  font-size: 1.8rem;
+  color: #2a2c2d;
+  line-height: 2.8rem;;
+  font-weight: 300;
+  max-width: 760px;
+  margin-top: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+a.hd:link, 
+a.hd:visited {
+  font-size: 1.2rem;
+  margin-top: 10px;
+  margin-left: 1.6rem;
+  text-decoration: none;
+  font-weight: 400;
+  display: inline-block;
+  vertical-align: middle;
+  color: #1f3a93;
+}
 
 /* Mobile, grid 640 */
 @media only screen and (max-width: 640px) {
@@ -132,9 +231,29 @@ button:active:disabled {
     line-height: 1.5rem;
   }
 
-  input {
+  .ip {
     margin-left: 0;
   }
+  
+  .font_l {
+    font-size: 2.5rem;
+    /* letter-spacing: -0.01rem;  */
+    line-height: 1.3;
+    font-weight: 300;
+    max-width: 700px;
+    margin-bottom: 1rem;
+  }
+  
+  .font_m {
+    font-size: 1.5rem;
+    color: #2a2c2d;
+    line-height: 2.8rem;;
+    font-weight: 300;
+    max-width: 760px;
+    margin-top: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
 } 
 
 

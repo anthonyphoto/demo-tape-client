@@ -1,6 +1,7 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {Route, withRouter} from 'react-router-dom';
+import HeaderSec from './header-sec';
 import LandingPage from './landing-page';
 
 export class App extends React.Component {
@@ -8,6 +9,7 @@ export class App extends React.Component {
     render() {
         return (
             <div>
+                <HeaderSec />
                 <Route exact path="/" component={LandingPage} />
             </div>
         );

@@ -9,11 +9,13 @@ export function SmsSec(props) {
         return(
             <div className='sms_div' aria-live='polite'>
                 <div className='sms_w'>
-                * Note: Unfortunately, Twilio's trial SMS does not work with unverified phone numbers. If your number is not registered, please feel free to test with my number (215-347-0245). 
+                {/* * Note: Unfortunately, Twilio's trial SMS does not work with unverified phone numbers. If your number is not registered, please feel free to test with my number (215-347-0245).  */}
                 </div>
             </div>            
         )
-    }
+    } else 
+        document.getElementById('content-top').scrollIntoView();
+
     const {status, message} = props.smsResult;
 
     return (

@@ -8,7 +8,9 @@ import ErrorSec from './error-sec';
 import './landing-page.css';
 
 export class LandingPage extends React.Component{
-
+    // componentDidUpdate() {
+        // document.getElementById('ls-track').scrollIntoView();
+    // }
     render() {
         if (this.props.error) {
             return  <ErrorSec err={this.props.error} />
@@ -27,16 +29,16 @@ export class LandingPage extends React.Component{
         <main className='main-bg fi'>
             {loadingJsx}
             <div className='flx'>
-                <div>
+                <div id='ls-track'>
                     <a href="https://www.promptworks.com/" target="_blank">
                     <img src="/img/promptworks.png" alt="PromptWorks Logo" width="220px" />
                     </a>
                 </div>
             </div>
             <br /><br />
-            <div className='div'>
+            {/* <div className='div'>
                 <InputForm /> 
-            </div>
+            </div> */}
             <SmsSec />  <ArtistSec />  <ListSec />
         </main>
         );
